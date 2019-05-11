@@ -5,6 +5,6 @@ Permisje:
 - alpaq.adminauth - gracz z tą permisją musi wpisać pin, aby móc wykonywać komendy, poruszać się, integrować w świecie itp.
 
 Informacje:
-  Czas pisania pluginu: +/- 1,5h
-  Autor: Alpaq
-  Nazwa pluginu: alpaq-adminAuth
+- Czas pisania pluginu: +/- 1,5h
+- Autor: Alpaq
+- Nazwa pluginu: alpaq-adminAuth
