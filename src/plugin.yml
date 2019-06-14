@@ -1,0 +1,4 @@
+name: alpaq-adminAuth
+author: Alpaq
+version: 1.0
+main: pl.alpaq.admin.auth.AuthPlugin

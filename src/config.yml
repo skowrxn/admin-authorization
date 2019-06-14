@@ -1,0 +1,13 @@
+pin: 1234
+
+title1: '&6config.yml'
+subtitle1: '&aPodaj pin na chacie'
+
+title2: '&6zmien w configu'
+subtitle2: '&aPodales bledny pin! Pozostaly {PROBY} proby!'
+
+title3: '&6zmien w configu'
+subtitle3: '&aPoprawny pin!'
+
+max_proby: 3
+kick_msg: '&cZa duzo prob!'
