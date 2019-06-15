@@ -60,7 +60,7 @@ public class InteractListener implements Listener {
 	}@EventHandler
 	public void pvpx(EntityDamageByEntityEvent e){
 		
-		if(e.getEntity().getType().equals(EntityType.PLAYER) && e.getDamager().getType().equals(EntityType.PLAYER)){
+		if(e.getEntity().getType().equals(EntityType.PLAYER)){
 			if(tocancel.contains((Player)e.getEntity())){
 			e.setCancelled(true);
 			}
@@ -88,7 +88,7 @@ public class InteractListener implements Listener {
 		}
 	}
 	public void AsyncPlayerKick(Player p){
-		Bukkit.dispatchCommand(Bukkit.getConsoleSender(), "kick "+p.getName()+" "+PinManager.getKickMSG().replace('&', 'ง'));
+		Bukkit.dispatchCommand(Bukkit.getConsoleSender(), "kick "+p.getName()+" "+PinManager.getKickMSG().replace('&', 'ยง'));
 	}
 	@EventHandler
 	public void chat(AsyncPlayerChatEvent e){
