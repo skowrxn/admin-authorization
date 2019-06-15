@@ -8,3 +8,4 @@ Informacje:
 - Czas pisania pluginu: +/- 1,5h
 - Autor: Alpaq
 - Nazwa pluginu: alpaq-adminAuth
+- Wersja: 1.8.x
