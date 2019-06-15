@@ -17,15 +17,14 @@ public class ChatUtil {
 	
 	public static void sendMessage(Player p , String msg){
 		msg = ChatColor.translateAlternateColorCodes('&', msg);
-		msg = msg.replace('&', '§');
-		msg = msg.replace(">>", "»");
+		msg = msg.replace(">>", "Â»");
 		p.sendMessage(msg);
 	}
 	public static void sendTitle(Player player, Integer fadeIn, Integer stay, Integer fadeOut, String title, String subtitle) {
 		subtitle = ChatColor.translateAlternateColorCodes('&', subtitle);
-		subtitle = subtitle.replace(">>", "»");
+		subtitle = subtitle.replace(">>", "Â»");
 		title = ChatColor.translateAlternateColorCodes('&', title);
-		title = title.replace(">>", "»");
+		title = title.replace(">>", "Â»");
         PlayerConnection connection = ((CraftPlayer)player).getHandle().playerConnection;
 
         PacketPlayOutTitle packetPlayOutTimes = new PacketPlayOutTitle(EnumTitleAction.TIMES, null, fadeIn.intValue(), stay.intValue(), fadeOut.intValue());
@@ -45,7 +44,7 @@ public class ChatUtil {
 
     public static void sendActionBar(Player p, String msg) {
     	msg = ChatColor.translateAlternateColorCodes('&', msg);
-    	msg = msg.replace(">>", "»");
+    	msg = msg.replace(">>", "Â»");
         IChatBaseComponent cbc = IChatBaseComponent.ChatSerializer.a("{\"text\": \"" + msg + "\"}");
         PacketPlayOutChat ppoc = new PacketPlayOutChat(cbc, (byte)2);
         ((CraftPlayer)p).getHandle().playerConnection.sendPacket(ppoc);
